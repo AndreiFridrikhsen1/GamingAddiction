@@ -1,0 +1,81 @@
+img {
+    margin-top:30px;
+    border:solid thin;
+    max-width: 600px;
+    align-self: center;
+    
+}
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    color: #FAF0CA;
+    text-shadow:1px 2px 2px black;
+    font-size: 200%;
+}
+body {
+    display:flex;
+    flex-direction: column;
+    background-color:#8896AB;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+div {
+    margin-top: 20px;
+    display: flex;
+    width: 600px;
+    align-self: center;
+    justify-content: space-around;
+}
+div p {
+    border:solid thin;
+    padding:10px;
+    background-color:#C5D5E4;
+    box-shadow: 2px 2px 2px grey;
+
+   
+}
+section{
+    padding: 30px;
+    width:70%;
+    max-height:600px;
+    overflow:scroll;
+    border:solid thin;
+    align-self: center;
+    position: absolute;
+    background-color: red;
+    margin-bottom:20px;
+    background-color: #F4D35E;
+    line-height: 25px;
+    visibility: hidden;
+    margin-top: 20px;
+}
+h2 {
+    text-align: center;
+    margin-bottom:40px;
+    text-shadow:1px 2px 2px grey;
+}
+h2:nth-child(1):hover, h1:hover {
+    color: yellowgreen;
+    cursor: pointer;
+}
+
+h3 {
+    text-align: center;
+    text-decoration: underline;
+    color:#fef0f0;
+    position: absolute;
+    top: 0;
+}
+div p:hover {
+    color: rgb(11, 34, 184);
+    box-shadow: 5px 5px 5px grey;
+}
+section p:hover, li:hover {
+    color: #836303;
+    border-bottom: dotted 2px white;
+    
+}
+section p, li {
+    padding:15px;
+    text-wrap: wrap;
+    white-space: normal;
+}
