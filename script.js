@@ -4,7 +4,12 @@ const img = document.querySelector("img");
 const next = document.querySelector(".next");
 const previous = document.querySelector(".previous");
 const scroll = document.querySelector(".scroll");
-
+let backgrounds = ["url('background/game1.png')", "url('background/game2.png')", "url('background/game3.png')", "url('background/game4.png')", "url('background/game5.png')"];
+const body = document.body;
+body.style.backgroundImage = "url('background/game1.png')";
+body.style.backgroundSize = "92px";
+body.style.backgroundRepeat = "repeat-x";
+body.style.backgroundPositionY = "-17px"
 let i = 0;
 img.setAttribute("src", links[i]);
 
@@ -12,6 +17,7 @@ img.setAttribute("src", links[i]);
 const changeImage = () => {
     i = (i + 1) % links.length; // Increment i, reset to 0 if it exceeds the array length
     img.setAttribute("src", links[i]);
+    body.style.backgroundImage = backgrounds[i % backgrounds.length];
 };
 
 // Next button click event
@@ -25,6 +31,7 @@ previous.addEventListener("click", function() {
     h3.style.visibility="hidden";
     i = (i - 1 + links.length) % links.length; // Decrement i, wrap around if it goes below 0
     img.setAttribute("src", links[i]);
+    body.style.backgroundImage = backgrounds[i % backgrounds.length];
 });
 
 let intervalId = null;
