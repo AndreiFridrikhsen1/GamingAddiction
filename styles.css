@@ -5,9 +5,14 @@ img {
     align-self: center;
     
 }
+a {
+    text-decoration: underline;
+    font-style: oblique;
+    color:rgb(96, 64, 224);
+}
 h1 {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 80px;
     color: #FAF0CA;
     text-shadow:1px 2px 2px black;
     font-size: 200%;
@@ -60,10 +65,12 @@ h2:nth-child(1):hover, h1:hover {
 
 h3 {
     text-align: center;
-    text-decoration: underline;
-    color:#fef0f0;
+    border:solid thin 2px;
+    width: 200px;
+    color:#fffff0;
     position: absolute;
-    top: 0;
+    top: 50px;
+    text-shadow: 1px 2px 1px black;
 }
 div p:hover {
     color: rgb(11, 34, 184);
@@ -72,6 +79,7 @@ div p:hover {
 section p:hover, li:hover {
     color: #836303;
     border-bottom: dotted 2px white;
+    border-top: dotted 2px white;
     
 }
 section p, li {
